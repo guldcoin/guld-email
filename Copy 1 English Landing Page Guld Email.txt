@@ -1,0 +1,44 @@
+Guld.Email - PTY Glass Students, VIP and Organizers Landing Page. Spanish and English.
+
+<h1>Guld.email - Registration </h1>
+
+Sponsors, VIP attendants, Students and Organizers of the Panama Glass Summit are all invited to become members of the Guld, to be able to interact with the network, and identify themselves in order to make different types of transactions.
+
+<h3>What is the Guld? </h3>
+A private P2P network, secured by PGP encryption, and accessible for interaction through PGP secured email.
+
+<h3>How to register your Guld username?</h3>
+In order to reserve your Guld User name, and start interacting with the network in signed transactions on the Blocktree, you will need to configure your email with PGP encryption and use the templates below.
+
+
+
+<h3>Intro to PGP</h3>
+PGP encryption is know as one of the best ways to protect the contents of your messages, text, and even files.
+
+The way that this works is through Private and Public key Pairings. The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms. 
+
+The private key allows you to sign and encrypt messages and identify you (or whoever holds it) as the true sender of the signed message, while the public key, if sent to someone who wants to contact you, or received  from someone you want to contact, allows you to encode messages so only those specific people can decode the contents. On top of this, your key access can be protected with a password any time you use it.
+
+
+
+<h3>Setting up your PGP Identity.</h3>
+Depending on your system, Mac Windows or Linux, you will need different software.
+
+Mac
+Windows
+Linux
+
+
+<h3>General Recommendations</h3>
+1. Do not share your private key with anyone. You must guard your private key very carefully.
+2. You may share and publish your Public key, for it can only be used to encode messages that only you can open.
+3. Set your key with a Expiration date, in case you lose access to your keys in the future, your identity will not be on the lose.
+4. Hardware based PGP Keys, like Yubico Keys, are the highest standard of identity security. We encourage you use them.
+
+
+
+Once your PGP encrypted email is ready, These are the following transactions you may excecute.
+
+Pending Templates to be included.
+Pending Spanish Version.
+
