@@ -1,0 +1,129 @@
+Guld.io Email - General Audience
+
+Guld.email - Registration 
+
+**Welcome to the Blocktree.**
+
+Here, you will find how transactions are created and logged on the Blocktree. 
+
+The base protocol we use, is secure PGP email. Setting up your PGP email is the easiest way of interacting with the Guld Blocktree.
+
+
+
+**Intro to PGP**
+PGP encryption is know as one of the best ways to protect the contents of your messages, text, and even files.
+
+The way that this works is through Private and Public key Pairings. The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms. 
+
+The private key allows you to sign and encrypt messages and identify you (or whoever holds it) as the true sender of the signed message, while the public key, if sent to someone who wants to contact you, or received from someone you want to contact, allows you to encode messages so only those specific people can decode the contents. 
+
+PGP encryption allows us to securely identify ownership of accounts through secure keys.
+
+On top of this, your key access as well can be protected with a password any time you use it.
+
+
+
+***Setting up your PGP Identity. (Creating your first keys)***
+
+PGP Email Installation Guide
+
+While PGP ca work as a standalone technology, there are simple ways to integrate them into email.
+
+Follow these instructions in order to set up Thunderbird + the Enigmail plugin available on PC, Linux, and MacOS , Mail.app + OpenGPG, for MacOS, and Evolution Mail, for Linux.
+
+
+
+ 
+ Thunderbird + the Enigmail plugin available on PC, Linux, and MacOS 
+ 
+ PC
+ 
+ 
+ Linux
+ 
+ 
+ MacOS
+ 
+ 
+ 
+ Mail.app + GPG Keychain, for MacOS
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+**Registering a Username on Guld**
+
+To register a transaction on the Guld, a pgp signed email must be sent from a Guld account with the following transaction format, changing Username for your desired username:
+
+
+Registration
+; requires only sufficient guld and an open name
+
+
+2018/27/01 * individual registration
+    Username:Assets   -1 guld
+    Username:Expenses:guld:register   1 guld
+    guld:Liabilities   1 guld
+    guld:Income:register:individual:Username   -1 guld
+
+
+
+
+**How to register your Guld username?**
+In order to reserve your Guld User name and start interacting with the network and sign transactions on the Blocktree, you will need to configure your email with a PGP key pair. The debtor in the transaction to be signed uses his private key to sign the email containing the template below replacing 'Username' with your desired username. You will require to send 1 Guld to the ledger address 'guld:Income:register:individual' and the name you use must be available.
+
+
+
+**How to register Transactions on the Guld Blocktree?**
+
+The way that transactions are logged into the Guld Blocktree ledger is by sending the creditor or recipient, a signed email with the transaction template below, and a PGP signature identifying the integrity of the sender's message.
+
+A sample transaction email looks like this:
+
+ ; requires signature of the debtor
+2017/12/01 * transfer
+    Sender:Assets   -x guld
+    Sender:Expenses   x guld
+    Receiver:Assets   x guld
+    Receiver:Income   -x guld
+
+
+You may also register groups, like companies and institutions, by sending a signed email with the following template:
+
+; m = number of members
+2017/12/01 * group registration
+    Username:Assets   -m guld
+    Username:Expenses:guld:register   m guld
+    guld:Liabilities   m guld
+    guld:Income:register:group:groupname   -m guld
+
+	
+To securely register trusted devices into the guld blocktree shared filesystem, you must send a transactionto the account 'guld:Income:register:device:Username:devicename' using the template below:
+
+2017/12/01 * device registration
+    Username:Assets   -0.1 guld
+    Username:Expenses:guld:register   0.1 guld
+    guld:Liabilities   0.1 guld
+    guld:Income:register:device:Username:devicename   -0.1 guld
+
+	
+	
+
+
+
+
+
+
+<h3>General Recommendations</h3>
+1. Do not share your private key with anyone. You must guard your private key very carefully.
+2. You may share and publish your Public key, for it can only be used to encode messages that only you can open.
+3. Set your key with a Expiration date, in case you lose access to your keys in the future, your identity will not be on the lose.
+4. Hardware based PGP Keys, like Yubico Keys, are the highest standard of identity security. We encourage you use them.
+
+
+Pending Video, and Screenshots for Installation Instructions
