@@ -77,7 +77,8 @@ How to install [GPGSuite](https://gpgtools.org/gpgsuite.html) and generate your 
 3. Launch GPG Keychain 
 
 4. 
-# We need to tell the user how to pair his key with the mail client
+
+*** We need to tell the user how to pair his key with the mail client
 
 ##### Thunderbird + Enigmail
 
@@ -116,8 +117,8 @@ How to install [GPG4win](https://www.gpg4win.org/) and generate your PGP key.
 4. Choose `Create a personal OpenPGP key pair` from the options
 
 5. 
-# We need to tell the user how to pair his key with the mail client
 
+*** We need to tell the user how to pair his key with the mail client
 
 ##### Thunderbird + Enigmail
 
