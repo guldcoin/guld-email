@@ -41,6 +41,11 @@ sudo apt-get install evolution'
 
 3. Your PGP keys should be loaded up from PGA Automatically.
 
+4. Go to Preferences -> Security tab. copy your PGP Key ID, obtained from GPA
+
+5. Disable S/MIME Signing, hit ok.
+
+6. You are ready to sign and encrypt your emails from Evolution.
 
 
 #### Thunderbird + Enigmail
@@ -61,6 +66,9 @@ How to install Thunderbird and Enigmail, then configure your PGP key.
 
 6. Under Tools -> Addons, navigate to Extensions and search for `Enigmail`
 
+7. Restart Thunderbird, and Enigmail should import your GPA Keys automatically. 
+
+8. If your Keys are not loaded from GPA, load key backup from Enigmail settings in Hamburguer menu in THunderbird. 
 
 
 #### MacOS
@@ -114,12 +122,20 @@ How to install [GPG4win](https://www.gpg4win.org/) and generate your PGP key.
 
 3. Generate your Keypair from Kleopatra by going to File -> New Certificate.
 
-4. Choose `Create a personal OpenPGP key pair` from the options
+4. Choose `Create a personal OpenPGP key pair` from the options. 
 
-5. 
+5. Create a Key pair corresponding to the email from where you will be sending your signed messages.
 
-*** We need to tell the user how to pair his key with the mail client
+6. Save a backup of this key pair into a secure location in your local storage only you control. You will use this to load onto Enigmail.
 
 ##### Thunderbird + Enigmail
 
 Follow these instructions in order to set up Thunderbird + the Enigmail plugin.
+
+1. [Download Thunderbird Installer](https://www.mozilla.org/en-US/thunderbird/all/)
+
+2. Install and Follow the configuration wizard to set up your email account
+
+3. Under Tools -> Addons, navigate to Extensions and search for `Enigmail` and hit `Add to Thunderbird` 
+
+4. This should automatically pull your key from Kleopatra, if it doesn't, then you must import your key backup from where you saved the export in Kleopatra. 
