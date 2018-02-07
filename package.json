@@ -1,0 +1,24 @@
+{
+  "name": "guldemail",
+  "version": "1.0.0",
+  "description": "Guld Email Instructions",
+  "main": "index.js",
+  "dependencies": {
+    "markdown-folder-to-html": "^1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "markdown-folder-to-html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrissmejia/guld-email.git"
+  },
+  "author": "Chriss Mejía",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrissmejia/guld-email/issues"
+  },
+  "homepage": "https://github.com/chrissmejia/guld-email/#readme"
+}
