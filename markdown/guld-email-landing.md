@@ -1,8 +1,7 @@
-# Guld Email - General Audience
+# Guld Email
 
 **The guld.email protocol allows any email user to send and receive guld.**
 
-__Intro Video__
 
 ## Installation
 
