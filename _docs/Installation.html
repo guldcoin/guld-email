@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panama Glass Documentation</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <style>
+        .navbar {
+            padding: 0;
+            color: #0975bf;
+            font-weight: 200;
+            border-bottom: 2rem solid #1880c5;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        #content {
+            margin-top: 2rem;
+        }
+        
+        .list-group ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .list-group li {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        
+        .heading {
+            margin-top: 1.8rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            color: #464a4c8c;
+        }
+        
+        .list-group li a {
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .125);
+            width: 100%;
+            color: #464a4c;
+            text-align: inherit;
+        }
+        
+        .list-group li:first-child a {
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+        }
+        
+        .list-group li:last-child a {
+            margin-bottom: 2rem;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+        
+        .list-group li a.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #187fc5;
+            border-color: #0275d8;
+        }
+        
+        .list-group li a:focus,
+        .list-group li a:hover {
+            color: #464a4c;
+            text-decoration: none;
+            background-color: #f7f7f9;
+        }
+        
+        #cover {
+            width: 100%;
+            height: 100%;
+            page-break-after: always;
+            position: relative;
+            text-align: center;
+        }
+        
+        #cover img {
+            margin-top: 40%;
+            width: 80%;
+        }
+        
+        #cover ul {
+            list-style-type: none;
+        }
+        
+        #cover a {
+            display: none;
+        }
+        
+        #cover a.active {
+            font-size: 4rem;
+            font-weight: 300;
+            color: #b6b4b4;
+            position: relative;
+            top: -1rem;
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cover" class="d-print-block">
+        <img src="../img/logoprint.png" class="img-responsive" alt="Image">
+        <ul>
+<li><a class="" href="FAQ.html">FAQ</a></li>
+<li><a class="active" href="Installation.html">Installation</a></li>
+<li><a class="" href="Landing.html">Landing</a></li>
+<li><a class="" href="Transactions.html">Transactions</a></li>
+</ul>
+    </div>
+    <header class="header d-print-none">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <h1 id="logo">
+                        <a class="navbar-brand page-scroll" href="#page-top">
+                            <img src="../img/newlogo.png" class="img-responsive" alt="Image">
+                        </a>
+                    </h1>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-right">
+                    Docs
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- .nav -->
+    </header>
+
+    <section id="content" class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
+                <div class="list-group">
+                    <ul>
+<li><a class="" href="FAQ.html">FAQ</a></li>
+<li><a class="active" href="Installation.html">Installation</a></li>
+<li><a class="" href="Landing.html">Landing</a></li>
+<li><a class="" href="Transactions.html">Transactions</a></li>
+</ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div>
+                    <h2>Installation</h2>
+<p><em><strong>Setting up your PGP Identity. (Creating your first keys)</strong></em></p>
+<p><strong>TODO: Screenshots for Installation Instructions</strong></p>
+<p>While PGP can work as a standalone technology, there are many popular, stable email clients and plugins.</p>
+<h3>Linux</h3>
+<p><strong>Ubuntu and Gentoo minimum set for all instructions</strong></p>
+<h4>GPG</h4>
+<p>How to install GPG on linux systems. How to generate your PGP key.</p>
+<p>1.<a href="https://www.gnupg.org/download/index.html">Download GnuPG</a> and all the required libraries listed under it on Terminal.</p>
+<p>2.[Download GPA] (<a href="https://www.gnupg.org/download/index.html">https://www.gnupg.org/download/index.html</a>) and run it.</p>
+<p>3.Create your Key pair for the email account you will use to interact with guld.email. Set an expiration date for the key.</p>
+<p>4.Back up your Key to a secure location and set up with password.</p>
+<h4>Evolution</h4>
+<p><strong>recommended</strong></p>
+<p>How to install Evolution and configure your PGP key.</p>
+<ol>
+<li>Download and install Evolution by running the following commands in Terminal</li>
+</ol>
+<pre><code class="language-sudo">sudo apt-get update
+sudo apt-get install evolution'
+</code></pre>
+<ol start="2">
+<li>
+<p>Follow the configuration wizard to set up your email account.</p>
+</li>
+<li>
+<p>Your PGP keys should be loaded up from PGA Automatically.</p>
+</li>
+<li>
+<p>Go to Preferences -&gt; Security tab. copy your PGP Key ID, obtained from GPA</p>
+</li>
+<li>
+<p>Disable S/MIME Signing, hit ok.</p>
+</li>
+<li>
+<p>You are ready to sign and encrypt your emails from Evolution.</p>
+</li>
+</ol>
+<h4>Thunderbird + Enigmail</h4>
+<p><strong>not recommended</strong></p>
+<p>How to install Thunderbird and Enigmail, then configure your PGP key.</p>
+<ol>
+<li>
+<p><a href="https://www.mozilla.org/en-US/thunderbird/">Download Thunderbird</a></p>
+</li>
+<li>
+<p>Open a Terminal and go to your home directory: <code>cd ~</code></p>
+</li>
+<li>
+<p>Extract the contents of the downloaded file:<code>tar xjf thunderbird-*.tar.bz2</code></p>
+</li>
+<li>
+<p>Run the thunderbird script in the thunderbird folder: <code>~/thunderbird/thunderbird</code></p>
+</li>
+<li>
+<p>Follow the configuration wizard to set up your email account.</p>
+</li>
+<li>
+<p>Under Tools -&gt; Addons, navigate to Extensions and search for <code>Enigmail</code></p>
+</li>
+<li>
+<p>Restart Thunderbird, and Enigmail should import your GPA Keys automatically.</p>
+</li>
+<li>
+<p>If your Keys are not loaded from GPA, load key backup from Enigmail settings in Hamburguer menu in THunderbird.</p>
+</li>
+</ol>
+<h4>MacOS</h4>
+<h5>GPGSuite</h5>
+<p>How to install <a href="https://gpgtools.org/gpgsuite.html">GPGSuite</a> and generate your PGP key.</p>
+<ol>
+<li>
+<p><a href="https://gpgtools.org/gpgsuite.html">Download GPGSuite</a></p>
+</li>
+<li>
+<p>Install DMG.</p>
+</li>
+<li>
+<p>Launch GPG Keychain</p>
+</li>
+<li></li>
+</ol>
+<p>*** We need to tell the user how to pair his key with the mail client</p>
+<h5>Thunderbird + Enigmail</h5>
+<ol>
+<li>
+<p><a href="https://www.mozilla.org/en-US/thunderbird/all/">Download Thunderbird Installer</a></p>
+</li>
+<li>
+<p>Install and Follow the configuration wizard to set up your email account</p>
+</li>
+<li>
+<p>Under Tools -&gt; Addons, navigate to Extensions and search for <code>Enigmail</code></p>
+</li>
+</ol>
+<p><strong>recommended</strong></p>
+<p>How to install Thunderbird and Enigmail, then configure your PGP key.</p>
+<h5>Mail.app</h5>
+<p><strong>not recommended</strong></p>
+<p>How to configure your PGP key for use with Mail.app.</p>
+<h4>Windows</h4>
+<h5>GPG4win</h5>
+<p>How to install <a href="https://www.gpg4win.org/">GPG4win</a> and generate your PGP key.</p>
+<ol>
+<li>
+<p><a href="https://gpg4win.org/download.html">Download GPG4Win</a></p>
+</li>
+<li>
+<p>Run Installer and make sure you activate Kleopatra and GPA as a components to install.</p>
+</li>
+<li>
+<p>Generate your Keypair from Kleopatra by going to File -&gt; New Certificate.</p>
+</li>
+<li>
+<p>Choose <code>Create a personal OpenPGP key pair</code> from the options.</p>
+</li>
+<li>
+<p>Create a Key pair corresponding to the email from where you will be sending your signed messages.</p>
+</li>
+<li>
+<p>Save a backup of this key pair into a secure location in your local storage only you control. You will use this to load onto Enigmail.</p>
+</li>
+</ol>
+<h5>Thunderbird + Enigmail</h5>
+<p>Follow these instructions in order to set up Thunderbird + the Enigmail plugin.</p>
+<ol>
+<li>
+<p><a href="https://www.mozilla.org/en-US/thunderbird/all/">Download Thunderbird Installer</a></p>
+</li>
+<li>
+<p>Install and Follow the configuration wizard to set up your email account</p>
+</li>
+<li>
+<p>Under Tools -&gt; Addons, navigate to Extensions and search for <code>Enigmail</code> and hit <code>Add to Thunderbird</code></p>
+</li>
+<li>
+<p>This should automatically pull your key from Kleopatra, if it doesn’t, then you must import your key backup from where you saved the export in Kleopatra.</p>
+</li>
+</ol>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panama Glass Documentation</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <style>
+        .navbar {
+            padding: 0;
+            color: #0975bf;
+            font-weight: 200;
+            border-bottom: 2rem solid #1880c5;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        #content {
+            margin-top: 2rem;
+        }
+        
+        .list-group ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .list-group li {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        
+        .heading {
+            margin-top: 1.8rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            color: #464a4c8c;
+        }
+        
+        .list-group li a {
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .125);
+            width: 100%;
+            color: #464a4c;
+            text-align: inherit;
+        }
+        
+        .list-group li:first-child a {
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+        }
+        
+        .list-group li:last-child a {
+            margin-bottom: 2rem;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+        
+        .list-group li a.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #187fc5;
+            border-color: #0275d8;
+        }
+        
+        .list-group li a:focus,
+        .list-group li a:hover {
+            color: #464a4c;
+            text-decoration: none;
+            background-color: #f7f7f9;
+        }
+        
+        #cover {
+            width: 100%;
+            height: 100%;
+            page-break-after: always;
+            position: relative;
+            text-align: center;
+        }
+        
+        #cover img {
+            margin-top: 40%;
+            width: 80%;
+        }
+        
+        #cover ul {
+            list-style-type: none;
+        }
+        
+        #cover a {
+            display: none;
+        }
+        
+        #cover a.active {
+            font-size: 4rem;
+            font-weight: 300;
+            color: #b6b4b4;
+            position: relative;
+            top: -1rem;
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cover" class="d-print-block">
+        <img src="../img/logoprint.png" class="img-responsive" alt="Image">
+        <ul>
+<li><a class="active" href="FAQ.html">FAQ</a></li>
+<li><a class="" href="Installation.html">Installation</a></li>
+<li><a class="" href="Landing.html">Landing</a></li>
+<li><a class="" href="Transactions.html">Transactions</a></li>
+</ul>
+    </div>
+    <header class="header d-print-none">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <h1 id="logo">
+                        <a class="navbar-brand page-scroll" href="#page-top">
+                            <img src="../img/newlogo.png" class="img-responsive" alt="Image">
+                        </a>
+                    </h1>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-right">
+                    Docs
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- .nav -->
+    </header>
+
+    <section id="content" class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
+                <div class="list-group">
+                    <ul>
+<li><a class="active" href="FAQ.html">FAQ</a></li>
+<li><a class="" href="Installation.html">Installation</a></li>
+<li><a class="" href="Landing.html">Landing</a></li>
+<li><a class="" href="Transactions.html">Transactions</a></li>
+</ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div>
+                    <h1>Guld Email FAQ</h1>
+<h3>Intro to PGP</h3>
+<p>PGP encryption is know as one of the best ways to protect the contents of your messages, text, and even files.</p>
+<p>The way that this works is through Private and Public key Pairings. The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms.</p>
+<p>The private key allows you to sign and encrypt messages and identify you (or whoever holds it) as the true sender of the signed message, while the public key, if sent to someone who wants to contact you, or received from someone you want to contact, allows you to encode messages so only those specific people can decode the contents.</p>
+<p>PGP encryption allows us to securely identify ownership of accounts through secure keys.</p>
+<p>On top of this, your key access as well can be protected with a password any time you use it.</p>
+<h3>PGP Key generation</h3>
+<p>Keys should use RSA for both signing and encrypting.</p>
+<p>The RSA key should be at least 2048 bits length, but preferably 4096 bits.</p>
+<p>Set your key with a Expiration date, in case you lose access to your keys in the future, your identity will not be on the lose.</p>
+<h3>Key Storage</h3>
+<p>Do not share your private key with anyone. You must guard your private key very carefully.</p>
+<p>You may share and publish your Public key, for it can only be used to encode messages that only you can open.</p>
+<p>Hardware based PGP Keys, like Yubico Keys, are the highest standard of identity security. We encourage you use them.</p>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
