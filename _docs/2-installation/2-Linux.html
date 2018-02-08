@@ -120,6 +120,7 @@
             margin-bottom: 0.5rem;
             width: 100%;
             color: #464a4c8c;
+            text-transform: capitalize;
         }
 
         .list-group li a {
@@ -196,10 +197,20 @@
     <div id="cover" class="d-print-block">
         <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
         <ul>
-<li><a class="" href="index.html">index</a></li>
-<li><a class="active" href="FAQ.html">FAQ</a></li>
-<li><a class="" href="installation.html">installation</a></li>
-<li><a class="" href="transactions.html">transactions</a></li>
+<li><a class="" href="../index.html">index</a></li>
+<li class="heading">installation</li>
+<ul>
+<li><a class="" href="1-introduction.html">introduction</a></li>
+<li><a class="active" href="2-Linux.html">Linux</a></li>
+<li><a class="" href="3-MacOS.html">MacOS</a></li>
+<li><a class="" href="4-Windows.html">Windows</a></li>
+</ul>
+<li class="heading">transactions</li>
+<ul>
+<li><a class="" href="../3-transactions/1-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/2-Transfers.html">Transfers</a></li>
+</ul>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
     </div>
 
@@ -237,30 +248,88 @@
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
                     <ul>
-<li><a class="" href="index.html">index</a></li>
-<li><a class="active" href="FAQ.html">FAQ</a></li>
-<li><a class="" href="installation.html">installation</a></li>
-<li><a class="" href="transactions.html">transactions</a></li>
+<li><a class="" href="../index.html">index</a></li>
+<li class="heading">installation</li>
+<ul>
+<li><a class="" href="1-introduction.html">introduction</a></li>
+<li><a class="active" href="2-Linux.html">Linux</a></li>
+<li><a class="" href="3-MacOS.html">MacOS</a></li>
+<li><a class="" href="4-Windows.html">Windows</a></li>
+</ul>
+<li class="heading">transactions</li>
+<ul>
+<li><a class="" href="../3-transactions/1-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/2-Transfers.html">Transfers</a></li>
+</ul>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
                 </div>
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <h1>Guld Email FAQ</h1>
-<h3>Intro to PGP</h3>
-<p>PGP encryption is know as one of the best ways to protect the contents of your messages, text, and even files.</p>
-<p>The way that this works is through Private and Public key Pairings. The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms.</p>
-<p>The private key allows you to sign and encrypt messages and identify you (or whoever holds it) as the true sender of the signed message, while the public key, if sent to someone who wants to contact you, or received from someone you want to contact, allows you to encode messages so only those specific people can decode the contents.</p>
-<p>PGP encryption allows us to securely identify ownership of accounts through secure keys.</p>
-<p>On top of this, your key access as well can be protected with a password any time you use it.</p>
-<h3>PGP Key generation</h3>
-<p>Keys should use RSA for both signing and encrypting.</p>
-<p>The RSA key should be at least 2048 bits length, but preferably 4096 bits.</p>
-<p>Set your key with a Expiration date, in case you lose access to your keys in the future, your identity will not be on the lose.</p>
-<h3>Key Storage</h3>
-<p>Do not share your private key with anyone. You must guard your private key very carefully.</p>
-<p>You may share and publish your Public key, for it can only be used to encode messages that only you can open.</p>
-<p>Hardware based PGP Keys, like Yubico Keys, are the highest standard of identity security. We encourage you use them.</p>
+                    <h3>Linux</h3>
+<p><strong>Ubuntu and Gentoo minimum set for all instructions</strong></p>
+<h4>GPG</h4>
+<p>How to install GPG on linux systems. How to generate your PGP key.</p>
+<p>1.<a href="https://www.gnupg.org/download/index.html">Download GnuPG</a> and all the required libraries listed under it on Terminal.</p>
+<p>2.[Download GPA] (<a href="https://www.gnupg.org/download/index.html">https://www.gnupg.org/download/index.html</a>) and run it.</p>
+<p>3.Create your Key pair for the email account you will use to interact with guld.email. Set an expiration date for the key.</p>
+<p>4.Back up your Key to a secure location and set up with password.</p>
+<h4>Evolution</h4>
+<p><strong>recommended</strong></p>
+<p>How to install Evolution and configure your PGP key.</p>
+<ol>
+<li>Download and install Evolution by running the following commands in Terminal</li>
+</ol>
+<pre><code class="language-sudo">sudo apt-get update
+sudo apt-get install evolution'
+</code></pre>
+<ol start="2">
+<li>
+<p>Follow the configuration wizard to set up your email account.</p>
+</li>
+<li>
+<p>Your PGP keys should be loaded up from PGA Automatically.</p>
+</li>
+<li>
+<p>Go to Preferences -&gt; Security tab. copy your PGP Key ID, obtained from GPA</p>
+</li>
+<li>
+<p>Disable S/MIME Signing, hit ok.</p>
+</li>
+<li>
+<p>You are ready to sign and encrypt your emails from Evolution.</p>
+</li>
+</ol>
+<h4>Thunderbird + Enigmail</h4>
+<p><strong>not recommended</strong></p>
+<p>How to install Thunderbird and Enigmail, then configure your PGP key.</p>
+<ol>
+<li>
+<p><a href="https://www.mozilla.org/en-US/thunderbird/">Download Thunderbird</a></p>
+</li>
+<li>
+<p>Open a Terminal and go to your home directory: <code>cd ~</code></p>
+</li>
+<li>
+<p>Extract the contents of the downloaded file:<code>tar xjf thunderbird-*.tar.bz2</code></p>
+</li>
+<li>
+<p>Run the thunderbird script in the thunderbird folder: <code>~/thunderbird/thunderbird</code></p>
+</li>
+<li>
+<p>Follow the configuration wizard to set up your email account.</p>
+</li>
+<li>
+<p>Under Tools -&gt; Addons, navigate to Extensions and search for <code>Enigmail</code></p>
+</li>
+<li>
+<p>Restart Thunderbird, and Enigmail should import your GPA Keys automatically.</p>
+</li>
+<li>
+<p>If your Keys are not loaded from GPA, load key backup from Enigmail settings in Hamburguer menu in THunderbird.</p>
+</li>
+</ol>
 
 
                 </div>

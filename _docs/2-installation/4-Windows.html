@@ -197,20 +197,20 @@
     <div id="cover" class="d-print-block">
         <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
         <ul>
-<li><a class="active" href="index.html">index</a></li>
+<li><a class="" href="../index.html">index</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="2-installation/1-introduction.html">introduction</a></li>
-<li><a class="" href="2-installation/2-Linux.html">Linux</a></li>
-<li><a class="" href="2-installation/3-MacOS.html">MacOS</a></li>
-<li><a class="" href="2-installation/4-Windows.html">Windows</a></li>
+<li><a class="" href="1-introduction.html">introduction</a></li>
+<li><a class="" href="2-Linux.html">Linux</a></li>
+<li><a class="" href="3-MacOS.html">MacOS</a></li>
+<li><a class="active" href="4-Windows.html">Windows</a></li>
 </ul>
 <li class="heading">transactions</li>
 <ul>
-<li><a class="" href="3-transactions/1-Registration.html">Registration</a></li>
-<li><a class="" href="3-transactions/2-Transfers.html">Transfers</a></li>
+<li><a class="" href="../3-transactions/1-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/2-Transfers.html">Transfers</a></li>
 </ul>
-<li><a class="" href="4-FAQ.html">FAQ</a></li>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
     </div>
 
@@ -248,33 +248,64 @@
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
                     <ul>
-<li><a class="active" href="index.html">index</a></li>
+<li><a class="" href="../index.html">index</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="2-installation/1-introduction.html">introduction</a></li>
-<li><a class="" href="2-installation/2-Linux.html">Linux</a></li>
-<li><a class="" href="2-installation/3-MacOS.html">MacOS</a></li>
-<li><a class="" href="2-installation/4-Windows.html">Windows</a></li>
+<li><a class="" href="1-introduction.html">introduction</a></li>
+<li><a class="" href="2-Linux.html">Linux</a></li>
+<li><a class="" href="3-MacOS.html">MacOS</a></li>
+<li><a class="active" href="4-Windows.html">Windows</a></li>
 </ul>
 <li class="heading">transactions</li>
 <ul>
-<li><a class="" href="3-transactions/1-Registration.html">Registration</a></li>
-<li><a class="" href="3-transactions/2-Transfers.html">Transfers</a></li>
+<li><a class="" href="../3-transactions/1-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/2-Transfers.html">Transfers</a></li>
 </ul>
-<li><a class="" href="4-FAQ.html">FAQ</a></li>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
                 </div>
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <h1>Guld Email</h1>
-<p><strong>The guld.email protocol allows any email user to send and receive guld.</strong></p>
-<h2>Installation</h2>
-<p>The base protocol we use, is secure PGP signed messages. This website teaches new users how to install PGP and configure it for use sending and receiving <a href="https://guld.io">guld</a> ledger transactions over email.</p>
-<h5>Installation tabs</h5>
-<h2>Transactions</h2>
-<p>Once you have PGP installed and configured with your email client, you can begin transacting guld, as well as other guld-based assets and contracts. First, however, you must be a member of a guld network community, preferably <em>the</em> guld community.</p>
-<h5>Transaction tabs</h5>
+                    <h4>Windows</h4>
+<h5>GPG4win</h5>
+<p>How to install <a href="https://www.gpg4win.org/">GPG4win</a> and generate your PGP key.</p>
+<ol>
+<li>
+<p><a href="https://gpg4win.org/download.html">Download GPG4Win</a></p>
+</li>
+<li>
+<p>Run Installer and make sure you activate Kleopatra and GPA as a components to install.</p>
+</li>
+<li>
+<p>Generate your Keypair from Kleopatra by going to File -&gt; New Certificate.</p>
+</li>
+<li>
+<p>Choose <code>Create a personal OpenPGP key pair</code> from the options.</p>
+</li>
+<li>
+<p>Create a Key pair corresponding to the email from where you will be sending your signed messages.</p>
+</li>
+<li>
+<p>Save a backup of this key pair into a secure location in your local storage only you control. You will use this to load onto Enigmail.</p>
+</li>
+</ol>
+<h5>Thunderbird + Enigmail</h5>
+<p>Follow these instructions in order to set up Thunderbird + the Enigmail plugin.</p>
+<ol>
+<li>
+<p><a href="https://www.mozilla.org/en-US/thunderbird/all/">Download Thunderbird Installer</a></p>
+</li>
+<li>
+<p>Install and Follow the configuration wizard to set up your email account</p>
+</li>
+<li>
+<p>Under Tools -&gt; Addons, navigate to Extensions and search for <code>Enigmail</code> and hit <code>Add to Thunderbird</code></p>
+</li>
+<li>
+<p>This should automatically pull your key from Kleopatra, if it doesn’t, then you must import your key backup from where you saved the export in Kleopatra.</p>
+</li>
+</ol>
 
 
                 </div>

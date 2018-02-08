@@ -197,20 +197,20 @@
     <div id="cover" class="d-print-block">
         <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
         <ul>
-<li><a class="active" href="index.html">index</a></li>
+<li><a class="" href="../index.html">index</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="2-installation/1-introduction.html">introduction</a></li>
-<li><a class="" href="2-installation/2-Linux.html">Linux</a></li>
-<li><a class="" href="2-installation/3-MacOS.html">MacOS</a></li>
-<li><a class="" href="2-installation/4-Windows.html">Windows</a></li>
+<li><a class="" href="../2-installation/1-introduction.html">introduction</a></li>
+<li><a class="" href="../2-installation/2-Linux.html">Linux</a></li>
+<li><a class="" href="../2-installation/3-MacOS.html">MacOS</a></li>
+<li><a class="" href="../2-installation/4-Windows.html">Windows</a></li>
 </ul>
 <li class="heading">transactions</li>
 <ul>
-<li><a class="" href="3-transactions/1-Registration.html">Registration</a></li>
-<li><a class="" href="3-transactions/2-Transfers.html">Transfers</a></li>
+<li><a class="" href="1-Registration.html">Registration</a></li>
+<li><a class="active" href="2-Transfers.html">Transfers</a></li>
 </ul>
-<li><a class="" href="4-FAQ.html">FAQ</a></li>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
     </div>
 
@@ -248,33 +248,48 @@
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
                     <ul>
-<li><a class="active" href="index.html">index</a></li>
+<li><a class="" href="../index.html">index</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="2-installation/1-introduction.html">introduction</a></li>
-<li><a class="" href="2-installation/2-Linux.html">Linux</a></li>
-<li><a class="" href="2-installation/3-MacOS.html">MacOS</a></li>
-<li><a class="" href="2-installation/4-Windows.html">Windows</a></li>
+<li><a class="" href="../2-installation/1-introduction.html">introduction</a></li>
+<li><a class="" href="../2-installation/2-Linux.html">Linux</a></li>
+<li><a class="" href="../2-installation/3-MacOS.html">MacOS</a></li>
+<li><a class="" href="../2-installation/4-Windows.html">Windows</a></li>
 </ul>
 <li class="heading">transactions</li>
 <ul>
-<li><a class="" href="3-transactions/1-Registration.html">Registration</a></li>
-<li><a class="" href="3-transactions/2-Transfers.html">Transfers</a></li>
+<li><a class="" href="1-Registration.html">Registration</a></li>
+<li><a class="active" href="2-Transfers.html">Transfers</a></li>
 </ul>
-<li><a class="" href="4-FAQ.html">FAQ</a></li>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
                 </div>
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <h1>Guld Email</h1>
-<p><strong>The guld.email protocol allows any email user to send and receive guld.</strong></p>
-<h2>Installation</h2>
-<p>The base protocol we use, is secure PGP signed messages. This website teaches new users how to install PGP and configure it for use sending and receiving <a href="https://guld.io">guld</a> ledger transactions over email.</p>
-<h5>Installation tabs</h5>
-<h2>Transactions</h2>
-<p>Once you have PGP installed and configured with your email client, you can begin transacting guld, as well as other guld-based assets and contracts. First, however, you must be a member of a guld network community, preferably <em>the</em> guld community.</p>
-<h5>Transaction tabs</h5>
+                    <h3>Transfers</h3>
+<p><strong>How to send Transfers?</strong></p>
+<p>The way that transactions are logged into the guld Blocktree ledger is by sending the creditor or recipient, a signed email with the transaction template below, and a PGP signature identifying the integrity of the sender’s message.</p>
+<p>A sample transaction email looks like this:</p>
+<p>; requires signature of the debtor
+2017/12/01 * transfer
+Sender:Assets   -x guld
+Sender:Expenses   x guld
+Receiver:Assets   x guld
+Receiver:Income   -x guld</p>
+<p>You may also register groups, like companies and institutions, by sending a signed email with the following template:</p>
+<p>; m = number of members
+2017/12/01 * group registration
+Username:Assets   -m guld
+Username:Expenses:guld:register   m guld
+guld:Liabilities   m guld
+guld:Income:register:group:groupname   -m guld</p>
+<p>To securely register trusted devices into the guld blocktree shared filesystem, you must send a transactionto the account ‘guld:Income:register:device:Username:devicename’ using the template below:</p>
+<p>2017/12/01 * device registration
+Username:Assets   -0.1 guld
+Username:Expenses:guld:register   0.1 guld
+guld:Liabilities   0.1 guld
+guld:Income:register:device:Username:devicename   -0.1 guld</p>
 
 
                 </div>
