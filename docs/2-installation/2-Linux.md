@@ -1,4 +1,4 @@
-### Linux
+## Linux
 
 **Ubuntu and Gentoo minimum set for all instructions**
 

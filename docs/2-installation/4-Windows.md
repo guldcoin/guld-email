@@ -1,6 +1,6 @@
-#### Windows
+## Windows
 
-##### GPG4win
+#### GPG4win
 
 How to install [GPG4win](https://www.gpg4win.org/) and generate your PGP key.
 
@@ -16,7 +16,7 @@ How to install [GPG4win](https://www.gpg4win.org/) and generate your PGP key.
 
 6. Save a backup of this key pair into a secure location in your local storage only you control. You will use this to load onto Enigmail.
 
-##### Thunderbird + Enigmail
+#### Thunderbird + Enigmail
 
 Follow these instructions in order to set up Thunderbird + the Enigmail plugin.
 
