@@ -1,4 +1,4 @@
-### Registration
+## Registration
 
 **Registering a Username on guld**
 

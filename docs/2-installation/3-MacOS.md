@@ -1,6 +1,6 @@
-#### MacOS
+## MacOS
 
-##### GPGSuite
+#### GPGSuite
 
 How to install [GPGSuite](https://gpgtools.org/gpgsuite.html) and generate your PGP key.
 
@@ -15,7 +15,7 @@ How to install [GPGSuite](https://gpgtools.org/gpgsuite.html) and generate your 
 
 *** We need to tell the user how to pair his key with the mail client
 
-##### Thunderbird + Enigmail
+#### Thunderbird + Enigmail
 
 
 1. [Download Thunderbird Installer](https://www.mozilla.org/en-US/thunderbird/all/)
@@ -31,7 +31,7 @@ How to install [GPGSuite](https://gpgtools.org/gpgsuite.html) and generate your 
 
 How to install Thunderbird and Enigmail, then configure your PGP key.
 
-##### Mail.app
+#### Mail.app
 
 **not recommended**
 

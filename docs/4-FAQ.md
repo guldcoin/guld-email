@@ -1,6 +1,6 @@
-# Guld Email FAQ
+## Guld Email FAQ
 
-### Intro to PGP
+#### Intro to PGP
 
 PGP encryption is know as one of the best ways to protect the contents of your messages, text, and even files.
 
@@ -12,7 +12,7 @@ PGP encryption allows us to securely identify ownership of accounts through secu
 
 On top of this, your key access as well can be protected with a password any time you use it.
 
-### PGP Key generation
+#### PGP Key generation
 
 Keys should use RSA for both signing and encrypting.
 
@@ -20,7 +20,7 @@ The RSA key should be at least 2048 bits length, but preferably 4096 bits.
 
 Set your key with a Expiration date, in case you lose access to your keys in the future, your identity will not be on the lose.
 
-### Key Storage
+#### Key Storage
 
 Do not share your private key with anyone. You must guard your private key very carefully.
 
