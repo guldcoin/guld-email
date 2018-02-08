@@ -20,7 +20,7 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            color: #130222;
+            color: #000;
             font-weight: 300;
         }
 
@@ -87,8 +87,6 @@
             display: inline-block;
         }
 
-
-
         img {
             max-width: 100%;
         }
@@ -132,6 +130,7 @@
             width: 100%;
             color: #464a4c;
             text-align: inherit;
+            text-transform: capitalize;
         }
 
         .list-group li:first-child a {
@@ -165,11 +164,13 @@
             page-break-after: always;
             position: relative;
             text-align: center;
+            font-size: 10rem;
+            font-weight: 200;
+            padding-top: 40%;
         }
 
         #cover img {
-            margin-top: 40%;
-            width: 80%;
+            width: 40%;
         }
 
         #cover ul {
@@ -181,24 +182,24 @@
         }
 
         #cover a.active {
-            font-size: 4rem;
-            font-weight: 300;
             color: #b6b4b4;
             position: relative;
             top: -1rem;
-            display: block
+            font-size: 6rem;
+            display: block;
+            text-transform: capitalize;
         }
     </style>
 </head>
 
 <body>
     <div id="cover" class="d-print-block">
-        <img src="../img/logo.svg" class="img-responsive" alt="Image">
+        <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
         <ul>
+<li><a class="" href="index.html">index</a></li>
 <li><a class="" href="FAQ.html">FAQ</a></li>
-<li><a class="" href="Index.html">Index</a></li>
-<li><a class="" href="Installation.html">Installation</a></li>
-<li><a class="active" href="Transactions.html">Transactions</a></li>
+<li><a class="" href="installation.html">installation</a></li>
+<li><a class="active" href="transactions.html">transactions</a></li>
 </ul>
     </div>
 
@@ -236,10 +237,10 @@
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
                     <ul>
+<li><a class="" href="index.html">index</a></li>
 <li><a class="" href="FAQ.html">FAQ</a></li>
-<li><a class="" href="Index.html">Index</a></li>
-<li><a class="" href="Installation.html">Installation</a></li>
-<li><a class="active" href="Transactions.html">Transactions</a></li>
+<li><a class="" href="installation.html">installation</a></li>
+<li><a class="active" href="transactions.html">transactions</a></li>
 </ul>
                 </div>
             </div>
