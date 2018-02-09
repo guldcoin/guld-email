@@ -1,4 +1,4 @@
-### Transfers
+## Transfers
 **How to send Transfers?**
 
 The way that transactions are logged into the guld Blocktree ledger is by sending the creditor or recipient, a signed email with the transaction template below, and a PGP signature identifying the integrity of the sender's message.
