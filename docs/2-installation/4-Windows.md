@@ -22,8 +22,15 @@ Follow these instructions in order to set up Thunderbird + the Enigmail plugin.
 
 1. [Download Thunderbird Installer](https://www.mozilla.org/en-US/thunderbird/all/)
 
+![](pgp_installations/windows_gpg4win_5.png)
+
+
 2. Install and Follow the configuration wizard to set up your email account
 
+![](pgp_installations/windows_gpg4win_6.png)
+
 3. Under Tools -> Addons, navigate to Extensions and search for `Enigmail` and hit `Add to Thunderbird` 
+
+![](pgp_installations/windows_gpg4win_7.png)
 
 4. This should automatically pull your key from Kleopatra, if it doesn't, then you must import your key backup from where you saved the export in Kleopatra. 
