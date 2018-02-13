@@ -1,16 +1,19 @@
-## Guld Email
+# guld.email setup guide. 
+#### How to use guld with just email and pgp.
 
-**The guld.email protocol allows any email user to send and receive guld.**
 
 
-#### Installation
+##### 1. [Set up your email client with PGP, to start signing and sending guld.email transactions.](2-installation/1-introduction.html)
 
-The base protocol we use, is secure PGP signed messages. This website teaches new users how to install PGP and configure it for use sending and receiving [guld](https://guld.io) ledger transactions over email.
+##### 2. [Use the guld.email web applet to create your transactions.](www.guld.io/guld-email.html)
 
-##### Installation tabs
+##### 3. [Sign transaction file with your PGP Key.](3-transactions/1-Signing.html)
 
-#### Transactions
+##### 4. [Register your guld user name and attach to your PGP Key **_Invite only access_**](3-transactions/2-Registration.html) 
 
-Once you have PGP installed and configured with your email client, you can begin transacting guld, as well as other guld-based assets and contracts. First, however, you must be a member of a guld network community, preferably *the* guld community.
+##### 5. [Send transaction and signature to public@email.guld](3-transactions/4-Sending-signed-email.html)
 
-##### Transaction tabs
+
+
+
+
