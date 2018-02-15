@@ -208,7 +208,21 @@
 <body>
     <div id="cover" class="d-print-block">
         <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
-        <!--NAV-->
+        <ul>
+<li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
+<li class="heading">installation</li>
+<ul>
+<li><a class="" href="2-Linux.html">Linux</a></li>
+<li><a class="active" href="3-MacOS.html">MacOS</a></li>
+<li><a class="" href="4-Windows.html">Windows</a></li>
+</ul>
+<li class="heading">transactions</li>
+<ul>
+<li><a class="" href="../3-transactions/2-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/3-Transfers.html">Transfers</a></li>
+</ul>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
+</ul>
     </div>
 
     <!-- Navigation -->
@@ -254,12 +268,69 @@
         <div class="row row-offcanvas row-offcanvas-left">
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
-                    <!--NAV-->
+                    <ul>
+<li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
+<li class="heading">installation</li>
+<ul>
+<li><a class="" href="2-Linux.html">Linux</a></li>
+<li><a class="active" href="3-MacOS.html">MacOS</a></li>
+<li><a class="" href="4-Windows.html">Windows</a></li>
+</ul>
+<li class="heading">transactions</li>
+<ul>
+<li><a class="" href="../3-transactions/2-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/3-Transfers.html">Transfers</a></li>
+</ul>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
+</ul>
                 </div>
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <!--CONTENT-->
+                    <h2>MacOS</h2>
+<h4>How to install <a href="https://gpgtools.org/gpgsuite.html">GPGSuite</a> and generate your PGP key.</h4>
+<ol>
+<li>
+<p><a href="https://gpgtools.org/gpgsuite.html">Download GPGSuite</a></p>
+</li>
+<li>
+<p>Install the file in the DMG.</p>
+</li>
+<li>
+<p>Follow The steps</p>
+</li>
+<li>
+<p>Choose <code>Create a personal OpenPGP key pair</code> from the options.</p>
+</li>
+<li>
+<p>Launch GPG Keychain</p>
+</li>
+<li>
+<p>Create a Key pair corresponding to the email from where you will be sending your signed messages.</p>
+</li>
+</ol>
+<h2>Setting up Thunderbird + Enigmail as your email client. <strong><em>Recommended</em></strong></h2>
+<ol>
+<li><a href="https://www.mozilla.org/en-US/thunderbird/all/">Download Thunderbird Installer</a></li>
+</ol>
+<p><img src="pgp_installations/windows_gpg4win_5.png" alt=""></p>
+<ol start="2">
+<li>Install and Follow the configuration wizard to set up your email account</li>
+</ol>
+<p><img src="pgp_installations/windows_gpg4win_6.png" alt=""></p>
+<ol start="3">
+<li>Under Tools -&gt; Addons, navigate to Extensions and search for <code>Enigmail</code> and hit <code>Add to Thunderbird</code></li>
+</ol>
+<p><img src="pgp_installations/windows_gpg4win_7.png" alt=""></p>
+<ol start="4">
+<li>This should automatically pull your key from GPG Keychain, if it doesn’t, then you must import your key backup from where you saved the export in GPG Keychain.</li>
+</ol>
+<p><strong>recommended</strong></p>
+<p>How to install Thunderbird and Enigmail, then configure your PGP key.</p>
+<h4>Mail.app</h4>
+<p><strong>not recommended</strong></p>
+<p>How to configure your PGP key for use with Mail.app.</p>
+
 
                 </div>
 

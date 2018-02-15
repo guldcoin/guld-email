@@ -208,7 +208,21 @@
 <body>
     <div id="cover" class="d-print-block">
         <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
-        <!--NAV-->
+        <ul>
+<li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
+<li class="heading">installation</li>
+<ul>
+<li><a class="active" href="2-Linux.html">Linux</a></li>
+<li><a class="" href="3-MacOS.html">MacOS</a></li>
+<li><a class="" href="4-Windows.html">Windows</a></li>
+</ul>
+<li class="heading">transactions</li>
+<ul>
+<li><a class="" href="../3-transactions/2-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/3-Transfers.html">Transfers</a></li>
+</ul>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
+</ul>
     </div>
 
     <!-- Navigation -->
@@ -254,12 +268,100 @@
         <div class="row row-offcanvas row-offcanvas-left">
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
-                    <!--NAV-->
+                    <ul>
+<li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
+<li class="heading">installation</li>
+<ul>
+<li><a class="active" href="2-Linux.html">Linux</a></li>
+<li><a class="" href="3-MacOS.html">MacOS</a></li>
+<li><a class="" href="4-Windows.html">Windows</a></li>
+</ul>
+<li class="heading">transactions</li>
+<ul>
+<li><a class="" href="../3-transactions/2-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/3-Transfers.html">Transfers</a></li>
+</ul>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
+</ul>
                 </div>
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <!--CONTENT-->
+                    <h2>Ubuntu Linux</h2>
+<p><strong>Ubuntu and Gentoo minimum set for all instructions</strong></p>
+<h4>GPG</h4>
+<p>How to install GPG on linux systems. How to generate your PGP key.</p>
+<p>1.<a href="https://www.gnupg.org/download/index.html">Download GnuPG</a> and all the required libraries listed under it on Terminal.</p>
+<p>2.[Download GPA] (<a href="https://www.gnupg.org/download/index.html">https://www.gnupg.org/download/index.html</a>) and run it.</p>
+<p>3.Create your Key pair for the email account you will use to interact with guld.email. Set an expiration date for the key.</p>
+<p>4.Back up your Key to a secure location and set up with password.</p>
+<h4>Evolution</h4>
+<p><strong>recommended</strong></p>
+<p>How to install Evolution and configure your PGP key.</p>
+<ol>
+<li>Download and install Evolution by running the following commands in Terminal</li>
+</ol>
+<pre><code>sudo add-apt-repository ppa:fta/gnome3
+sudo apt-get update
+sudo apt-get install evolution'
+</code></pre>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_1.PNG" alt=""></p>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_2.PNG" alt=""></p>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_3.PNG" alt=""></p>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_4.PNG" alt=""></p>
+<ol start="2">
+<li>Run Evolution by typing ‘evolution’</li>
+</ol>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_5.PNG" alt=""></p>
+<ol start="3">
+<li>Follow the configuration wizard to set up your email account.</li>
+</ol>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_6.PNG" alt=""></p>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_7.PNG" alt=""></p>
+<ol start="3">
+<li>
+<p>Your PGP keys should be loaded up from PGA Automatically.</p>
+</li>
+<li>
+<p><em>In case your keys are not automatically loaded</em> Go to Preferences -&gt; Security tab. copy your PGP Key ID, obtained from GPA</p>
+</li>
+<li>
+<p>Disable S/MIME Signing, hit ok.</p>
+</li>
+<li>
+<p>You are ready to sign and encrypt your emails from Evolution.</p>
+</li>
+</ol>
+<h4>Thunderbird + Enigmail</h4>
+<p><strong>not recommended</strong></p>
+<p>How to install Thunderbird and Enigmail, then configure your PGP key.</p>
+<ol>
+<li>
+<p><a href="https://www.mozilla.org/en-US/thunderbird/">Download Thunderbird - <em>Skip if thunderbird already installed</em></a></p>
+</li>
+<li>
+<p>Open a Terminal and go to your home directory: <code>cd ~</code></p>
+</li>
+<li>
+<p>Extract the contents of the downloaded file:<code>tar xjf thunderbird-*.tar.bz2</code></p>
+</li>
+<li>
+<p>Run the thunderbird script in the thunderbird folder: <code>~/thunderbird/thunderbird</code></p>
+</li>
+<li>
+<p>Follow the configuration wizard to set up your email account.</p>
+</li>
+<li>
+<p>Under Tools -&gt; Addons, navigate to Extensions and search for <code>Enigmail</code></p>
+</li>
+<li>
+<p>Restart Thunderbird, and Enigmail should import your GPA Keys automatically.</p>
+</li>
+<li>
+<p>If your Keys are not loaded from GPA, load key backup from Enigmail settings in Hamburguer menu in THunderbird.</p>
+</li>
+</ol>
+
 
                 </div>
 

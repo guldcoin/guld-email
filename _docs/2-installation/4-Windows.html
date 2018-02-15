@@ -208,7 +208,21 @@
 <body>
     <div id="cover" class="d-print-block">
         <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
-        <!--NAV-->
+        <ul>
+<li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
+<li class="heading">installation</li>
+<ul>
+<li><a class="" href="2-Linux.html">Linux</a></li>
+<li><a class="" href="3-MacOS.html">MacOS</a></li>
+<li><a class="active" href="4-Windows.html">Windows</a></li>
+</ul>
+<li class="heading">transactions</li>
+<ul>
+<li><a class="" href="../3-transactions/2-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/3-Transfers.html">Transfers</a></li>
+</ul>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
+</ul>
     </div>
 
     <!-- Navigation -->
@@ -254,12 +268,66 @@
         <div class="row row-offcanvas row-offcanvas-left">
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
-                    <!--NAV-->
+                    <ul>
+<li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
+<li class="heading">installation</li>
+<ul>
+<li><a class="" href="2-Linux.html">Linux</a></li>
+<li><a class="" href="3-MacOS.html">MacOS</a></li>
+<li><a class="active" href="4-Windows.html">Windows</a></li>
+</ul>
+<li class="heading">transactions</li>
+<ul>
+<li><a class="" href="../3-transactions/2-Registration.html">Registration</a></li>
+<li><a class="" href="../3-transactions/3-Transfers.html">Transfers</a></li>
+</ul>
+<li><a class="" href="../4-FAQ.html">FAQ</a></li>
+</ul>
                 </div>
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <!--CONTENT-->
+                    <h2>Windows</h2>
+<h4>GPG4win</h4>
+<p>How to install <a href="https://www.gpg4win.org/">GPG4win</a> and generate your PGP key.</p>
+<ol>
+<li>
+<p><a href="https://gpg4win.org/download.html">Download GPG4Win</a></p>
+</li>
+<li>
+<p>Run Installer and make sure you activate Kleopatra and GPA as a components to install.</p>
+</li>
+<li>
+<p>Generate your Keypair from Kleopatra by going to File -&gt; New Certificate.</p>
+</li>
+<li>
+<p>Choose <code>Create a personal OpenPGP key pair</code> from the options.</p>
+</li>
+<li>
+<p>Create a Key pair corresponding to the email from where you will be sending your signed messages.</p>
+</li>
+<li>
+<p>Save a backup of this key pair into a secure location in your local storage only you control. You will use this to load onto Enigmail.</p>
+</li>
+</ol>
+<h4>Thunderbird + Enigmail</h4>
+<p>Follow these instructions in order to set up Thunderbird + the Enigmail plugin.</p>
+<ol>
+<li><a href="https://www.mozilla.org/en-US/thunderbird/all/">Download Thunderbird Installer</a></li>
+</ol>
+<p><img src="pgp_installations/windows_gpg4win_5.png" alt=""></p>
+<ol start="2">
+<li>Install and Follow the configuration wizard to set up your email account</li>
+</ol>
+<p><img src="pgp_installations/windows_gpg4win_6.png" alt=""></p>
+<ol start="3">
+<li>Under Tools -&gt; Addons, navigate to Extensions and search for <code>Enigmail</code> and hit <code>Add to Thunderbird</code></li>
+</ol>
+<p><img src="pgp_installations/windows_gpg4win_7.png" alt=""></p>
+<ol start="4">
+<li>This should automatically pull your key from Kleopatra, if it doesn’t, then you must import your key backup from where you saved the export in Kleopatra.</li>
+</ol>
+
 
                 </div>
 
