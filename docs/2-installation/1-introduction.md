@@ -1,16 +1,25 @@
-## PGP Key Setup + Email Installation
+# PGP Key Setup + Email Installation
 
 
-### Setting up your PGP Private Keys, with these Instructions
+### Once you have installed the PGP client that corresponds with your OS, you can set up your PGP Keys with the following general Instructions.
 
 
-1. Create your PGP Private Keys, and assign to the email account you want to attach your guld username.
+## [PGP FAQ](4-FAQ.md)
 
-![](pgp_installations/windows_gpg4win_4.png)
 
-2. Configure your Email Client with PGP with the following installation instructions for [Linux](2-Linux.html), [MacOS](3-MacOS.html) and [Windows](4-Windows.html).
-3. (Optional) Share your public key with your trusted contacts for private encrypted messages.
-4. (Optional) Add your trusted contacts to your PGP Keyring to send them encrypted or signed messages. 
+#### 1. Create your PGP Private Keys, and assign to the email account you want to attach your guld username.
+
+![](pgp_installations/gpg4win_1.PNG)
+
+#### 2. Configure your Email Client with PGP with the following installation instructions for [Linux](2-Linux.md), [MacOS](3-MacOS.md) and [Windows](4-Windows.md).
+
+
+
+
+
+#### 3. (Optional) Share your public key with your trusted contacts for private encrypted messages.
+
+#### 4. (Optional) Add your trusted contacts to your PGP Keyring to send them encrypted or signed messages. 
 
 
 
