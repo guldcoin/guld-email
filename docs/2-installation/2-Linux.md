@@ -31,24 +31,24 @@ sudo apt-get update
 sudo apt-get install evolution'
 ```
 
-![](pgp_installations/Linux_Evo_1.PNG)
+![](http://guld.email/pgp_installations/Linux_Evo_1.PNG)
 
-![](pgp_installations/Linux_Evo_2.PNG)
+![](http://guld.email/pgp_installations/Linux_Evo_2.PNG)
 
-![](pgp_installations/Linux_Evo_3.PNG)
+![](http://guld.email/pgp_installations/Linux_Evo_3.PNG)
 
-![](pgp_installations/Linux_Evo_4.PNG)
+![](http://guld.email/pgp_installations/Linux_Evo_4.PNG)
 
 2. Run Evolution by typing 'evolution'
 
-![](pgp_installations/Linux_Evo_5.PNG)
+![](http://guld.email/pgp_installations/Linux_Evo_5.PNG)
 
 
 3. Follow the configuration wizard to set up your email account. 
 
-![](pgp_installations/Linux_Evo_6.PNG)
+![](http://guld.email/pgp_installations/Linux_Evo_6.PNG)
 
-![](pgp_installations/Linux_Evo_7.PNG)
+![](http://guld.email/pgp_installations/Linux_Evo_7.PNG)
 
 3. Your PGP keys should be loaded up from PGA Automatically.
 
