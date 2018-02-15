@@ -7,20 +7,12 @@
 
         var doc = "; requires signature of the debtor\n"
         doc += date.getFullYear() + "/" + date.getDate() + "/" + date.getDay() + " * transfer\n"
-<<<<<<< HEAD
-        doc += "    " + sender + ":Assets   -" + amount + " guld\n"
-        doc += "    " + sender + ":Expenses   " + amount + " guld\n"
-        doc += "    " + receiver + ":Assets   " + amount + " guld\n"
-        doc += "    " + receiver + ":Income   -" + amount + " guld\n"
-
-=======
         doc += "    ; timestamp: " + parseInt(Date.now()/1000) + "\n"
         doc += "    " + sender + ":Assets    -" + amount + " guld\n"
         doc += "    " + sender + ":Expenses    " + amount + " guld\n"
         doc += "    " + receiver + ":Assets    " + amount + " guld\n"
         doc += "    " + receiver + ":Income    -" + amount + " guld\n"
         console.log(doc);
->>>>>>> eb55f99a009cfaf3f0794c994fdfce97a403378b
         return doc;
     }
 
