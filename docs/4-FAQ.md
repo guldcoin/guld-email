@@ -2,9 +2,16 @@
 
 #### Intro to PGP
 
-PGP encryption is know as one of the best ways to protect the contents of your messages, text, and even files.
+PGP (Pretty Good Privacy) encryption is one of the best ways to protect your privacy and prove your identity online.
 
-The way that this works is through Private and Public key Pairings. The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms.
+PGP works through Private and Public key Pairings. To use PGP the user must create 2 keys.
+
+
+
+
+
+
+ The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms.
 
 The private key allows you to sign and encrypt messages and identify you (or whoever holds it) as the true sender of the signed message, while the public key, if sent to someone who wants to contact you, or received from someone you want to contact, allows you to encode messages so only those specific people can decode the contents.
 
