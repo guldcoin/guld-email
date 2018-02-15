@@ -6,6 +6,7 @@
 
         var doc = "; requires majority of guld equity to approve\n"
         doc += date.getFullYear() + "/" + date.getDate() + "/" + date.getDay() + " * Grant for work done\n"
+        doc += "    ; timestamp: " + parseInt(Date.now()/1000) + "\n"
         doc += "    guld:Liabilities   -" + amount + " guld\n"
         doc += "    guld:Equity:" + receiver + "   " + amount + " guld\n"
         doc += "    " + receiver + ":Assets   " + amount + " guld\n"
@@ -91,7 +92,8 @@
             var emailBody = generateDoc();
             $("#guld-grant-section-form").hide();
             $("#guld-grant-section-done").show();
-            document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
+            var body = encodeURIComponent(emailBody);
+            document.location = "mailto:" + email + "?subject=" + subject + "&body=" + body;
         }
         form.classList.add('was-validated');
     }, false);

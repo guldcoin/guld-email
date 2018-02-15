@@ -1,10 +1,30 @@
-## Guld Email FAQ
+## guld.email and PGP FAQ
 
-#### Intro to PGP
+## Intro to PGP
 
-PGP encryption is know as one of the best ways to protect the contents of your messages, text, and even files.
+### Why Guld uses PGP and Email? 
 
-The way that this works is through Private and Public key Pairings. The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms.
+Guld works through PGP and secure email. Because of this privacy standards, only desktop clients can be used to send and receive guld.
+
+### What is PGP?
+
+PGP (Pretty Good Privacy) encryption is one of the best ways to protect your privacy and prove your identity online.
+
+PGP works through Private and Public key Pairings. To use PGP the user must create 2 keys.
+
+You can Sign a file, proving your identity attached to it, or encrypt a file with someone else's public key to ensure only the recipient.
+
+### How does guld.email work?
+
+1. Hit the 'send' button to prepare a send transaction. 
+2. Fill in the the 'sender', 'receiver' and 'amount' fields, then hit generate. 
+3. This will open your email client and attach the transaction file. If setup with PGP encryption, send as inline encrypted message, to public@iramiller.com 
+
+
+
+#How does Private, Public Key Pair work?
+
+The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms.
 
 The private key allows you to sign and encrypt messages and identify you (or whoever holds it) as the true sender of the signed message, while the public key, if sent to someone who wants to contact you, or received from someone you want to contact, allows you to encode messages so only those specific people can decode the contents.
 

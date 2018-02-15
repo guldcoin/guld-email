@@ -9,6 +9,7 @@
         if (type.value == 1) {
             var doc = "; requires only sufficient guld and an open name\n"
             doc += date.getFullYear() + "/" + date.getDate() + "/" + date.getDay() + " * individual registration\n"
+            doc += "    ; timestamp: " + parseInt(Date.now()/1000) + "\n"
             doc += "    " + registrator + ":Assets   -1 guld\n"
             doc += "    " + registrator + ":Expenses:guld:register   1 guld\n"
             doc += "    guld:Liabilities   1 guld\n"
@@ -16,6 +17,7 @@
         } else if (type.value == 2) {
             var doc = "; m = number of members\n"
             doc += date.getFullYear() + "/" + date.getDate() + "/" + date.getDay() + " * group registration\n"
+            doc += "    ; timestamp: " + parseInt(Date.now()/1000) + "\n"
             doc += "    " + registrator + ":Assets   -" + number + " guld\n"
             doc += "    " + registrator + ":Expenses:guld:register   " + number + " guld\n"
             doc += "    guld:Liabilities   " + number + " guld\n"
@@ -23,6 +25,7 @@
         } else {
             var doc = ""
             doc += date.getFullYear() + "/" + date.getDate() + "/" + date.getDay() + " * device registration\n"
+            doc += "    ; timestamp: " + parseInt(Date.now()/1000) + "\n"
             doc += "    " + registrator + ":Assets   -0.1 guld\n"
             doc += "    " + registrator + ":Expenses:guld:register   0.1 guld\n"
             doc += "    guld:Liabilities   0.1 guld\n"
@@ -126,7 +129,8 @@
             var emailBody = generateDoc();
             $("#guld-registration-section-form").hide();
             $("#guld-registration-section-done").show();
-            document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
+            var body = encodeURIComponent(emailBody);
+            document.location = "mailto:" + email + "?subject=" + subject + "&body=" + body;
         }
         form.classList.add('was-validated');
     }, false);

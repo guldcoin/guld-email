@@ -9,7 +9,7 @@
     <title>Guld Email Instructions</title>
 
     <meta property="og:url" content="https://guld.email" />
-    <meta property="og:image" content="http://guld.email/img/og.jpg" />
+    <meta property="og:image" content="https://guld.email/img/og.jpg" />
     <meta property="og:title" content="Guld Email Instructions" />
     <meta property="og:description" content="A new decentralized internet" />
 
@@ -209,11 +209,9 @@
     <div id="cover" class="d-print-block">
         <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
         <ul>
-<li><a class="" href="../index.html">index</a></li>
 <li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="1-introduction.html">introduction</a></li>
 <li><a class="active" href="2-Linux.html">Linux</a></li>
 <li><a class="" href="3-MacOS.html">MacOS</a></li>
 <li><a class="" href="4-Windows.html">Windows</a></li>
@@ -222,7 +220,6 @@
 <ul>
 <li><a class="" href="../3-transactions/2-Registration.html">Registration</a></li>
 <li><a class="" href="../3-transactions/3-Transfers.html">Transfers</a></li>
-<li><a class="" href="../3-transactions/4-Sending-signed-email.html">Sending signed email</a></li>
 </ul>
 <li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
@@ -272,11 +269,9 @@
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
                     <ul>
-<li><a class="" href="../index.html">index</a></li>
 <li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="1-introduction.html">introduction</a></li>
 <li><a class="active" href="2-Linux.html">Linux</a></li>
 <li><a class="" href="3-MacOS.html">MacOS</a></li>
 <li><a class="" href="4-Windows.html">Windows</a></li>
@@ -285,7 +280,6 @@
 <ul>
 <li><a class="" href="../3-transactions/2-Registration.html">Registration</a></li>
 <li><a class="" href="../3-transactions/3-Transfers.html">Transfers</a></li>
-<li><a class="" href="../3-transactions/4-Sending-signed-email.html">Sending signed email</a></li>
 </ul>
 <li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
@@ -293,7 +287,7 @@
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <h2>Linux</h2>
+                    <h2>Ubuntu Linux</h2>
 <p><strong>Ubuntu and Gentoo minimum set for all instructions</strong></p>
 <h4>GPG</h4>
 <p>How to install GPG on linux systems. How to generate your PGP key.</p>
@@ -307,18 +301,29 @@
 <ol>
 <li>Download and install Evolution by running the following commands in Terminal</li>
 </ol>
-<pre><code class="language-sudo">sudo apt-get update
+<pre><code>sudo add-apt-repository ppa:fta/gnome3
+sudo apt-get update
 sudo apt-get install evolution'
 </code></pre>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_1.PNG" alt=""></p>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_2.PNG" alt=""></p>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_3.PNG" alt=""></p>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_4.PNG" alt=""></p>
 <ol start="2">
-<li>
-<p>Follow the configuration wizard to set up your email account.</p>
-</li>
+<li>Run Evolution by typing ‘evolution’</li>
+</ol>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_5.PNG" alt=""></p>
+<ol start="3">
+<li>Follow the configuration wizard to set up your email account.</li>
+</ol>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_6.PNG" alt=""></p>
+<p><img src="http://guld.email/pgp_installations/Linux_Evo_7.PNG" alt=""></p>
+<ol start="3">
 <li>
 <p>Your PGP keys should be loaded up from PGA Automatically.</p>
 </li>
 <li>
-<p>Go to Preferences -&gt; Security tab. copy your PGP Key ID, obtained from GPA</p>
+<p><em>In case your keys are not automatically loaded</em> Go to Preferences -&gt; Security tab. copy your PGP Key ID, obtained from GPA</p>
 </li>
 <li>
 <p>Disable S/MIME Signing, hit ok.</p>
@@ -332,7 +337,7 @@ sudo apt-get install evolution'
 <p>How to install Thunderbird and Enigmail, then configure your PGP key.</p>
 <ol>
 <li>
-<p><a href="https://www.mozilla.org/en-US/thunderbird/">Download Thunderbird</a></p>
+<p><a href="https://www.mozilla.org/en-US/thunderbird/">Download Thunderbird - <em>Skip if thunderbird already installed</em></a></p>
 </li>
 <li>
 <p>Open a Terminal and go to your home directory: <code>cd ~</code></p>
@@ -364,7 +369,7 @@ sudo apt-get install evolution'
         </div>
 
     </section>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"

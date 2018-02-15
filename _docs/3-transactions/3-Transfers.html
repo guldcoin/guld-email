@@ -9,7 +9,7 @@
     <title>Guld Email Instructions</title>
 
     <meta property="og:url" content="https://guld.email" />
-    <meta property="og:image" content="http://guld.email/img/og.jpg" />
+    <meta property="og:image" content="https://guld.email/img/og.jpg" />
     <meta property="og:title" content="Guld Email Instructions" />
     <meta property="og:description" content="A new decentralized internet" />
 
@@ -209,11 +209,9 @@
     <div id="cover" class="d-print-block">
         <img id="logo" src="../img/logo.svg" class="img-responsive" alt="Guld">Email
         <ul>
-<li><a class="" href="../index.html">index</a></li>
 <li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="../2-installation/1-introduction.html">introduction</a></li>
 <li><a class="" href="../2-installation/2-Linux.html">Linux</a></li>
 <li><a class="" href="../2-installation/3-MacOS.html">MacOS</a></li>
 <li><a class="" href="../2-installation/4-Windows.html">Windows</a></li>
@@ -222,7 +220,6 @@
 <ul>
 <li><a class="" href="2-Registration.html">Registration</a></li>
 <li><a class="active" href="3-Transfers.html">Transfers</a></li>
-<li><a class="" href="4-Sending-signed-email.html">Sending signed email</a></li>
 </ul>
 <li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
@@ -272,11 +269,9 @@
             <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
                 <div class="list-group">
                     <ul>
-<li><a class="" href="../index.html">index</a></li>
 <li><a class="" href="../1-guld.email-setup.html">guld.email setup</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="../2-installation/1-introduction.html">introduction</a></li>
 <li><a class="" href="../2-installation/2-Linux.html">Linux</a></li>
 <li><a class="" href="../2-installation/3-MacOS.html">MacOS</a></li>
 <li><a class="" href="../2-installation/4-Windows.html">Windows</a></li>
@@ -285,7 +280,6 @@
 <ul>
 <li><a class="" href="2-Registration.html">Registration</a></li>
 <li><a class="active" href="3-Transfers.html">Transfers</a></li>
-<li><a class="" href="4-Sending-signed-email.html">Sending signed email</a></li>
 </ul>
 <li><a class="" href="../4-FAQ.html">FAQ</a></li>
 </ul>
@@ -295,27 +289,12 @@
                 <div>
                     <h2>Transfers</h2>
 <p><strong>How to send Transfers?</strong></p>
-<p>The way that transactions are logged into the guld Blocktree ledger is by sending the creditor or recipient, a signed email with the transaction template below, and a PGP signature identifying the integrity of the sender’s message.</p>
-<p>A sample transaction email looks like this:</p>
-<p>; requires signature of the debtor
-2017/12/01 * transfer
-Sender:Assets   -x guld
-Sender:Expenses   x guld
-Receiver:Assets   x guld
-Receiver:Income   -x guld</p>
-<p>You may also register groups, like companies and institutions, by sending a signed email with the following template:</p>
-<p>; m = number of members
-2017/12/01 * group registration
-Username:Assets   -m guld
-Username:Expenses:guld:register   m guld
-guld:Liabilities   m guld
-guld:Income:register:group:groupname   -m guld</p>
-<p>To securely register trusted devices into the guld blocktree shared filesystem, you must send a transactionto the account ‘guld:Income:register:device:Username:devicename’ using the template below:</p>
-<p>2017/12/01 * device registration
-Username:Assets   -0.1 guld
-Username:Expenses:guld:register   0.1 guld
-guld:Liabilities   0.1 guld
-guld:Income:register:device:Username:devicename   -0.1 guld</p>
+<h3>How does guld.email work?</h3>
+<ol>
+<li>Hit the ‘send’ button to prepare a send transaction.</li>
+<li>Fill in the the ‘sender’, ‘receiver’ and ‘amount’ fields, then hit generate.</li>
+<li>This will open your email client and attach the transaction file. If setup with PGP encryption, send as inline encrypted message, to <a href="mailto:public@iramiller.com">public@iramiller.com</a></li>
+</ol>
 
 
                 </div>
@@ -324,7 +303,7 @@ guld:Income:register:device:Username:devicename   -0.1 guld</p>
         </div>
 
     </section>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"

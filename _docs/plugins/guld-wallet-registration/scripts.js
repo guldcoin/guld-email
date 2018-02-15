@@ -126,7 +126,8 @@
             var emailBody = generateDoc();
             $("#guld-registration-section-form").hide();
             $("#guld-registration-section-done").show();
-            document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
+            var body = encodeURIComponent(emailBody);
+            document.location = "mailto:" + email + "?subject=" + subject + "&body=" + body;
         }
         form.classList.add('was-validated');
     }, false);
