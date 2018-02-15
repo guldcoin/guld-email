@@ -7,11 +7,12 @@
 
         var doc = "; requires signature of the debtor\n"
         doc += date.getFullYear() + "/" + date.getDate() + "/" + date.getDay() + " * transfer\n"
-        doc += "    " + sender + ":Assets -" + amount + " guld\n"
-        doc += "    " + sender + ":Expenses " + amount + " guld\n"
-        doc += "    " + receiver + ":Assets " + amount + " guld\n"
-        doc += "    " + receiver + ":Income -" + amount + " guld\n"
-
+        doc += "    ; timestamp: " + parseInt(Date.now()/1000) + "\n"
+        doc += "    " + sender + ":Assets    -" + amount + " guld\n"
+        doc += "    " + sender + ":Expenses    " + amount + " guld\n"
+        doc += "    " + receiver + ":Assets    " + amount + " guld\n"
+        doc += "    " + receiver + ":Income    -" + amount + " guld\n"
+        console.log(doc);
         return doc;
     }
 
@@ -93,12 +94,13 @@
         event.preventDefault();
         event.stopPropagation();
         if (form.checkValidity() === true) {
-            var email = 'sample@gmail.com';
+            var email = 'public@gmail.email';
             var subject = "guld transfer";
             var emailBody = generateDoc();
             $("#section-form").hide();
             $("#section-done").show();
-            document.location = "mailto:" + email + "?subject=" + subject + "&body=" + encodeURI(emailBody);
+            var body = encodeURIComponent(emailBody);
+            document.location = "mailto:" + email + "?subject=" + subject + "&body=" + body;
         }
         form.classList.add('was-validated');
     }, false);
