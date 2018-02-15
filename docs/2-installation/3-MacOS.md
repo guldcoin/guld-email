@@ -17,13 +17,12 @@
 
 
 
-#### Thunderbird + Enigmail  **Recommended**
+## Setting up Thunderbird + Enigmail as your email client. **_Recommended_**
 
 
 1. [Download Thunderbird Installer](https://www.mozilla.org/en-US/thunderbird/all/)
 
 ![](pgp_installations/windows_gpg4win_5.png)
-
 
 2. Install and Follow the configuration wizard to set up your email account
 
@@ -36,8 +35,6 @@
 4. This should automatically pull your key from GPG Keychain, if it doesn't, then you must import your key backup from where you saved the export in GPG Keychain. 
 
 
-
-
 **recommended**
 
 How to install Thunderbird and Enigmail, then configure your PGP key.
@@ -47,3 +44,6 @@ How to install Thunderbird and Enigmail, then configure your PGP key.
 **not recommended**
 
 How to configure your PGP key for use with Mail.app.
+
+
+
