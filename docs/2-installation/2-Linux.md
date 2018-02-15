@@ -1,4 +1,4 @@
-## Linux
+## Ubuntu Linux
 
 **Ubuntu and Gentoo minimum set for all instructions**
 
@@ -24,16 +24,37 @@ How to install GPG on linux systems. How to generate your PGP key.
 How to install Evolution and configure your PGP key.
 
 1. Download and install Evolution by running the following commands in Terminal 
-```sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+
+``` 
+sudo add-apt-repository ppa:fta/gnome3
 sudo apt-get update
 sudo apt-get install evolution'
 ```
 
-2. Follow the configuration wizard to set up your email account. 
+![](pgp_installations/Linux_Evo_1.PNG)
+
+![](pgp_installations/Linux_Evo_2.PNG)
+
+![](pgp_installations/Linux_Evo_3.PNG)
+
+![](pgp_installations/Linux_Evo_4.PNG)
+
+2. Run Evolution by typing 'evolution'
+
+![](pgp_installations/Linux_Evo_5.PNG)
+
+
+3. Follow the configuration wizard to set up your email account. 
+
+![](pgp_installations/Linux_Evo_6.PNG)
+
+![](pgp_installations/Linux_Evo_7.PNG)
 
 3. Your PGP keys should be loaded up from PGA Automatically.
 
-4. Go to Preferences -> Security tab. copy your PGP Key ID, obtained from GPA
+4. _In case your keys are not automatically loaded_ Go to Preferences -> Security tab. copy your PGP Key ID, obtained from GPA
+
+
 
 5. Disable S/MIME Signing, hit ok.
 
@@ -46,9 +67,10 @@ sudo apt-get install evolution'
 
 How to install Thunderbird and Enigmail, then configure your PGP key.
 
-1. [Download Thunderbird](https://www.mozilla.org/en-US/thunderbird/)
+1. [Download Thunderbird - _Skip if thunderbird already installed_](https://www.mozilla.org/en-US/thunderbird/)
 
 2. Open a Terminal and go to your home directory: `cd ~`
+
 
 3. Extract the contents of the downloaded file:` tar xjf thunderbird-*.tar.bz2`
 

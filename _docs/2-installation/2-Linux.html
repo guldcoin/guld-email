@@ -273,7 +273,7 @@
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <h2>Linux</h2>
+                    <h2>Ubuntu Linux</h2>
 <p><strong>Ubuntu and Gentoo minimum set for all instructions</strong></p>
 <h4>GPG</h4>
 <p>How to install GPG on linux systems. How to generate your PGP key.</p>
@@ -287,18 +287,29 @@
 <ol>
 <li>Download and install Evolution by running the following commands in Terminal</li>
 </ol>
-<pre><code class="language-sudo">sudo apt-get update
+<pre><code>sudo add-apt-repository ppa:fta/gnome3
+sudo apt-get update
 sudo apt-get install evolution'
 </code></pre>
+<p><img src="pgp_installations/Linux_Evo_1.PNG" alt=""></p>
+<p><img src="pgp_installations/Linux_Evo_2.PNG" alt=""></p>
+<p><img src="pgp_installations/Linux_Evo_3.PNG" alt=""></p>
+<p><img src="pgp_installations/Linux_Evo_4.PNG" alt=""></p>
 <ol start="2">
-<li>
-<p>Follow the configuration wizard to set up your email account.</p>
-</li>
+<li>Run Evolution by typing ‘evolution’</li>
+</ol>
+<p><img src="pgp_installations/Linux_Evo_5.PNG" alt=""></p>
+<ol start="3">
+<li>Follow the configuration wizard to set up your email account.</li>
+</ol>
+<p><img src="pgp_installations/Linux_Evo_6.PNG" alt=""></p>
+<p><img src="pgp_installations/Linux_Evo_7.PNG" alt=""></p>
+<ol start="3">
 <li>
 <p>Your PGP keys should be loaded up from PGA Automatically.</p>
 </li>
 <li>
-<p>Go to Preferences -&gt; Security tab. copy your PGP Key ID, obtained from GPA</p>
+<p><em>In case your keys are not automatically loaded</em> Go to Preferences -&gt; Security tab. copy your PGP Key ID, obtained from GPA</p>
 </li>
 <li>
 <p>Disable S/MIME Signing, hit ok.</p>
@@ -312,7 +323,7 @@ sudo apt-get install evolution'
 <p>How to install Thunderbird and Enigmail, then configure your PGP key.</p>
 <ol>
 <li>
-<p><a href="https://www.mozilla.org/en-US/thunderbird/">Download Thunderbird</a></p>
+<p><a href="https://www.mozilla.org/en-US/thunderbird/">Download Thunderbird - <em>Skip if thunderbird already installed</em></a></p>
 </li>
 <li>
 <p>Open a Terminal and go to your home directory: <code>cd ~</code></p>
