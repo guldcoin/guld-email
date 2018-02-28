@@ -212,14 +212,14 @@
 <li><a class="" href="1-guld.email-setup.html">guld.email setup</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="2-installation\2-Linux.html">Linux</a></li>
-<li><a class="" href="2-installation\3-MacOS.html">MacOS</a></li>
-<li><a class="" href="2-installation\4-Windows.html">Windows</a></li>
+<li><a class="" href="2-installation/2-Linux.html">Linux</a></li>
+<li><a class="" href="2-installation/3-MacOS.html">MacOS</a></li>
+<li><a class="" href="2-installation/4-Windows.html">Windows</a></li>
 </ul>
 <li class="heading">transactions</li>
 <ul>
-<li><a class="" href="3-transactions\2-Registration.html">Registration</a></li>
-<li><a class="" href="3-transactions\3-Transfers.html">Transfers</a></li>
+<li><a class="" href="3-transactions/2-Registration.html">Registration</a></li>
+<li><a class="" href="3-transactions/3-Transfers.html">Transfers</a></li>
 </ul>
 <li><a class="active" href="4-FAQ.html">FAQ</a></li>
 </ul>
@@ -272,14 +272,14 @@
 <li><a class="" href="1-guld.email-setup.html">guld.email setup</a></li>
 <li class="heading">installation</li>
 <ul>
-<li><a class="" href="2-installation\2-Linux.html">Linux</a></li>
-<li><a class="" href="2-installation\3-MacOS.html">MacOS</a></li>
-<li><a class="" href="2-installation\4-Windows.html">Windows</a></li>
+<li><a class="" href="2-installation/2-Linux.html">Linux</a></li>
+<li><a class="" href="2-installation/3-MacOS.html">MacOS</a></li>
+<li><a class="" href="2-installation/4-Windows.html">Windows</a></li>
 </ul>
 <li class="heading">transactions</li>
 <ul>
-<li><a class="" href="3-transactions\2-Registration.html">Registration</a></li>
-<li><a class="" href="3-transactions\3-Transfers.html">Transfers</a></li>
+<li><a class="" href="3-transactions/2-Registration.html">Registration</a></li>
+<li><a class="" href="3-transactions/3-Transfers.html">Transfers</a></li>
 </ul>
 <li><a class="active" href="4-FAQ.html">FAQ</a></li>
 </ul>
@@ -287,59 +287,33 @@
             </div>
             <div class="col-12 col-md-9">
                 <div>
-                    <h2>guld.email FAQ - Intro to PGP</h2>
+                    <h2>guld.email and PGP FAQ</h2>
+<h2>Intro to PGP</h2>
+<h3>Why Guld uses PGP and Email?</h3>
+<p>Guld works through PGP and secure email. Because of this privacy standards, only desktop clients can be used to send and receive guld.</p>
 <h3>What is PGP?</h3>
 <p>PGP (Pretty Good Privacy) encryption is one of the best ways to protect your privacy and prove your identity online.</p>
-<p>Don’t let the name fool you. It’s DAMN good privacy.</p>
-<p>PGP works through Private and Public key Pairings, created by each user on a trusted computer.</p>
-<h3>What can I do with PGP?</h3>
+<p>PGP works through Private and Public key Pairings. To use PGP the user must create 2 keys.</p>
+<p>You can Sign a file, proving your identity attached to it, or encrypt a file with someone else’s public key to ensure only the recipient.</p>
+<h3>How does guld.email work?</h3>
 <ol>
-<li>Digitally <code>Sign</code> a file, proving your identity attached to it.</li>
-<li><code>Encrypt</code> a file with someone else’s public key to ensure only the recipient can open it.</li>
-<li><code>Apply</code> and attach to your guld identity for digital transactions through our <a href="http://guld.chat">Telegram group and bot, Gai.</a></li>
-<li><code>Assign permisions</code> to who can acces files in your personal guld file cloud.</li>
-<li><code>Access</code> your guld cloud files from any <a href="https://tigoctm.com">TigoCTM machine</a>.</li>
+<li>Hit the ‘send’ button to prepare a send transaction.</li>
+<li>Fill in the the ‘sender’, ‘receiver’ and ‘amount’ fields, then hit generate.</li>
+<li>This will open your email client and attach the transaction file. If setup with PGP encryption, send as inline encrypted message, to <a href="mailto:public@iramiller.com">public@iramiller.com</a></li>
 </ol>
-<h3>How does the guld.email page work?</h3>
-<p>This page will generate an email template to send over to <code>public@iramiller.com</code></p>
-<ol>
-<li>Hit the <code>send</code> button to prepare a send transaction.</li>
-<li>Fill in the the <code>sender</code>, <code>receiver</code> and <code>amount</code> fields, then hit generate.</li>
-<li>This will open your email client and attach the transaction file. If setup with PGP encryption, send as inline encrypted message, to <code>public@iramiller.com</code></li>
-</ol>
-<h3>How does Private, Public Key Pair work?</h3>
+<p>#How does Private, Public Key Pair work?</p>
 <p>The private key you create, along the public key it generates, are your two main tools to safely identify yourself across unsafe communication platforms.</p>
 <p>The private key allows you to sign and encrypt messages and identify you (or whoever holds it) as the true sender of the signed message, while the public key, if sent to someone who wants to contact you, or received from someone you want to contact, allows you to encode messages so only those specific people can decode the contents.</p>
-<h3>PGP Key generation Recomendations</h3>
-<ul>
-<li>
+<p>PGP encryption allows us to securely identify ownership of accounts through secure keys.</p>
+<p>On top of this, your key access as well can be protected with a password any time you use it.</p>
+<h4>PGP Key generation</h4>
 <p>Keys should use RSA for both signing and encrypting.</p>
-</li>
-<li>
 <p>The RSA key should be at least 2048 bits length, but preferably 4096 bits.</p>
-</li>
-<li>
 <p>Set your key with a Expiration date, in case you lose access to your keys in the future, your identity will not be on the lose.</p>
-</li>
-</ul>
-<h3>Key Storage</h3>
+<h4>Key Storage</h4>
 <p>Do not share your private key with anyone. You must guard your private key very carefully.</p>
 <p>You may share and publish your Public key, for it can only be used to encode messages that only you can open.</p>
 <p>Hardware based PGP Keys, like Yubico Keys, are the highest standard of identity security. We encourage you use them.</p>
-<h4>Copying your Public Block Key</h4>
-<p>You may be asked to share your public key as a text block.</p>
-<p>Different programs allow this to be done in different ways.</p>
-<ul>
-<li>
-<p>Windows - Kleopatra: Right click on key, then hit details, then hit the export button to display the text to copy.</p>
-</li>
-<li>
-<p>MacOS - GPG keychain: right click on the key from the list in GPG Keychain, then paste wherever needed.</p>
-</li>
-<li>
-<p>Linux - GPG: right click and hit export. This will display the text block to paste.</p>
-</li>
-</ul>
 
 
                 </div>
