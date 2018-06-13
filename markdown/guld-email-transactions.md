@@ -1,22 +1,40 @@
 ## Transactions
 
+Guld email transactions are like all other [guld](https://guld.io) transactions, except for one additional required tag: `timestamp`, which must be set to the epoch timestamp at the time of signing. The timestamp number must be ascending in transactions sequential in the blocktree, and no user may submit two transactions with the same timestamp.
+
 ### Registration
 
 **Registering a Username on guld**
 
-To register a transaction on the guld, a pgp signed email must be sent from a guld account with the following transaction format, changing Username for your desired username:
+In order to reserve your guld username and start interacting with the network, you will need to configure your email with a PGP key pair. Each transaction signer uses their private key to sign the email matching one of the templates below. Replace `USERNAME` with your desired username, and `SENDER` with the member who is inviting you. You will require to repay `1 guld` to the ledger address `guld:Income:register:individual:USERNAME`. The name you use must be alphanumeric, and available.
 
-Registration
-; requires only sufficient guld and an open name
+##### Step 1
 
-2018/27/01 * individual registration
-    Username:Assets   -1 guld
-    Username:Expenses:guld:register   1 guld
+Receive at least 1 guld to your `USERNAME` from an existing member. Before sending this member must recognize your PGP key.
+
+```
+2018/01/27 * transfer
+    ; timestamp: 1517242632
+    SENDER:Assets   -1 guld
+    SENDER:Expenses   1 guld
+    USERNAME:Assets   1 guld
+    USERNAME:Income   -1 guld
+```
+
+The transaction must be signed and hashed into the guld branch before moving on to step 2.
+
+##### Step 2
+
+To register a transaction on the guld, a pgp signed email must be sent to a guld email node with the following transaction format, changing USERNAME for your desired username:
+
+```
+2018/01/27 * individual registration
+    ; timestamp: 1517242682
+    USERNAME:Assets   -1 guld
+    USERNAME:Expenses:guld:register   1 guld
     guld:Liabilities   1 guld
-    guld:Income:register:individual:Username   -1 guld
-
-**How to register your guld username?**
-In order to reserve your guld User name and start interacting with the network and sign transactions on the Blocktree, you will need to configure your email with a PGP key pair. The debtor in the transaction to be signed uses his private key to sign the email containing the template below replacing 'Username' with your desired username. You will require to send 1 guld to the ledger address 'guld:Income:register:individual' and the name you use must be available.
+    guld:Income:register:individual:USERNAME   -1 guld
+```
 
 ### Transfers
 **How to send Transfers?**
