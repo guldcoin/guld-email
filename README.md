@@ -1,2 +1,14 @@
-# guld-email
-Instructions of Guld Network Identity Interactions.
+# Guld Email
+
+* Install dependencies:
+
+```bash
+npm install
+```
+
+
+* Compile:
+
+```bash
+npm run docs
+```
